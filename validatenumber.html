@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validate mobile number</title>
+</head>
+<body>
+    <h3>please enter your number </br></h3>
+    
+    <input type="text" name="" onkeyup="val(this)">
+    <div id="res"></div>
+    
+</body>
+<script>
+    document.getElementById('res').style.color= "blue";
+    function val(elem){
+              if(isNaN(elem.value)){
+                  document.getElementById('res').innerText = "please enter number only";
+              }
+              else{
+                document.getElementById('res').innerText = "";
+                if (elem.value.length>10){
+                    document.getElementById('res').innerText = "please enter only ten digits number";
+                }
+                else{
+                    document.getElementById('res').innerText = "";
+                }
+              }
+    }
+</script>
+</html>
