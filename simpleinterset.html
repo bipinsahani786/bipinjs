@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+</head>
+<body>
+    <h3>CALCULATE SIMPLE INTEREST</h3>
+  <input type="number" name="first" id="first" placeholder=" principal"  />
+  
+  <input type="number" name="second" id="second" placeholder=" rate %" />
+  <input type="number" name="third" id="third" placeholder=" time" />
+  <br>
+  <br>
+
+  <button onclick = "cal()">Calculate</button>
+  <input type="text" name="" id="res" readonly=""/>
+</body>
+<script type="text/javascript">
+  function cal(){
+
+    var opr1 = document.getElementById('first').value;
+    var opr2 = document.getElementById('second').value;
+    var opr3 = document.getElementById('third').value;
+    var _res = parseInt(opr1) * parseInt(opr2) * parseInt(opr3);
+    var res = _res/100;
+    document.getElementById('res').value=res;
+  }
+
+    
+
+</script>
+
+</html>
