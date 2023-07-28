@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modifycss</title>
+</head>
+<style>
+     
+        h1{
+            text-align: center;
+            font-weight: bolder;
+            color: blue;
+            font-size: 50px;
+            margin-top: 50px;
+        }
+
+</style>
+<body>
+    <h1 onmouseenter="modify()" onmouseleave="unmodify()">Hello Bipin</h1>
+</body>
+<script>
+    function modify(){
+        document.getElementsByTagName('h1')[0].style.fontSize= "150px";
+        document.getElementsByTagName('h1')[0].style.color="red";
+        document.getElementsByTagName('h1')[0].style.transition= "3s";
+
+    }
+    function unmodify(){
+        document.getElementsByTagName('h1')[0].style.fontSize= "75px";
+        document.getElementsByTagName('h1')[0].style.color= "aqua";
+    }
+
+</script>
+</html>
